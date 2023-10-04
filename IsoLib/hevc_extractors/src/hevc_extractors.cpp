@@ -73,12 +73,14 @@ int main(int argc, char** argv)
   std::string strOutputFile     = "out.265";
   uint32_t    uiDefaultLenSizeMin1 = 3;
   int32_t     iMaxSamples = -1;
+  std::string erikArgument;
 
   if(cOptions.isSet("-h"))
   {
     std::cout << "Extractors reference software version 0.1, Input contribution m44614 for 124th MPEG meeting\n"
                  "  -h              this help text\n"
                  "  -i inputFile    input ISOBMFF file (OMAF compliant)\n"
+                 "  -k FuzzSeed      this command line gives a seed input that tests the hevc_extractors executable\n"
                  "  -o outputFile   output HEVC bitstream file (default: out.265)\n"
                  "  -l              list all tarckIDs\n"
                  "  -t trackID      select a trackID from which the bitstream is extracted\n"
@@ -89,12 +91,13 @@ int main(int argc, char** argv)
   strInputFile  = cOptions.getOption("-i");
   strOutputFile = cOptions.getOption("-o", strOutputFile);
   bListTrackIDs = cOptions.isSet("-l") || !cOptions.isSet("-t");
+  erikArgument = cOptions.getOption("-k");
 
   std::string strTrackID = cOptions.getOption("-t");
   uiSelectedTrackID = atoi(strTrackID.c_str());
 
   // cmd options checks
-  if(strInputFile.empty())
+  if(erikArgument.empty())
   {
     std::cerr << "No input file specified." << std::endl;
     return -1;
@@ -123,7 +126,7 @@ int main(int argc, char** argv)
   }
   cExtractor.setDefaultLenSizeMinOne(uiDefaultLenSizeMin1);
 
-  err = cExtractor.init(strInputFile, true);
+  err = cExtractor.init(erikArgument, true);
   if(err)
   {
     std::cerr << "could not initialize extractor player: err=" << err << std::endl;

@@ -677,3 +677,16 @@ void HEVCExtractorReader::skipNotUsedAUs(TrackIDSet& rUsedTrackIds)
   }
   ISODisposeHandle(sampleSkip);
 }
+
+void fuzz(std::string strFileName)
+{
+  ISOMovie          m_cMovieBox;        // Movie Box
+  ISOErr err;
+  ISOHandle movieHandle;
+  err = ISOOpenMovieFile(&m_cMovieBox, strFileName.c_str(), MP4OpenMovieNormal); if(err) { printf("error is %X", err); }
+  printf("We got a movie %X", m_cMovieBox->data);
+  /*
+  err = ISOPutMovieIntoHandle(&m_cMovieBox, movieHandle);
+  */
+}
+
