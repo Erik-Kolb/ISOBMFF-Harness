@@ -16,3 +16,56 @@ Command Lines and Interesting Notes I have Found regarding fuzzing sessions for 
 *This command line was used with "test_meta_entity.mp4" to fuzz "MP4_to_WAV" executable
 
 5. Interesting Note: > ../AFL/afl-fuzz -i IN -o OUT -d ./bin/vvc_demuxer -i @@ when I tried this command line with "test_meta_entity.mp4" as the input, the executbale crashed immediately and would not continue to fuzz
+
+
+
+
+The 4 different places I found it to Crash
+
+1. Program received signal SIGSEGV, Segmentation fault.
+MP4DisposeOrdinaryTrackReader (self=self@entry=0x555555744) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342       theMedia = self->media;
+#0  MP4DisposeOrdinaryTrackReader (self=self@entry=0x555555744) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555555d33a9 in MP4DisposeTrackReader (theReader=0x555555744) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x0000555555576d79 in HEVCExtractorReader::init (this=this@entry=0x7fffffffde50, strFileName="crashes/id:000001,sig:11,src:000000,op:havoc,rep:4", bForce=bForce@entry=true) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x000055555555af1b in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+
+
+2. Program received signal SIGSEGV, Segmentation fault.
+0x000055555558d053 in MP4GetTrackID (theTrack=0x555555744a90, outTrackID=0x7fffffffdcb8) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45        *outTrackID     = trackHeaderAtom->trackID;
+#0  0x000055555558d053 in MP4GetTrackID (theTrack=0x555555744a90, outTrackID=0x7fffffffdcb8) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x0000555555576b24 in HEVCExtractorReader::init (this=this@entry=0x7fffffffde50, strFileName="crashes/id:000010,sig:11,src:000000,op:havoc,rep:2", bForce=bForce@entry=true) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x000055555555af1b in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+3. Program received signal SIGSEGV, Segmentation fault.
+__strncmp_evex () at ../sysdeps/x86_64/multiarch/strcmp-evex.S:132
+#0  __strncmp_evex () at ../sysdeps/x86_64/multiarch/strcmp-evex.S:132
+#1  0x000055555571054a in createCanonicalPathName (inputStream=inputStream@entry=0x555555744550, dataEntry=dataEntry@entry=0x5555557453e0, outPathNameH=0x5555557475d0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/FileMappingDataHandler.c:47
+#2  0x0000555555711337 in MP4PreflightFileMappingDataHandler (inputStream=0x555555744550, dataEntry=0x5555557453e0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/FileMappingDataHandler.c:220
+#3  0x00005555556fdab1 in MP4PreflightDataHandler (inputStream=<optimized out>, dataEntry=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4DataHandler.c:51
+#4  0x00005555556d9f78 in testDataEntry (self=0x555555745000, dataEntryIndex=1) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MediaInformationAtom.c:122
+#5  0x00005555555b8566 in MP4CheckMediaDataReferences (theMedia=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Media.c:1147
+#6  0x0000555555705149 in MP4CreateOrdinaryTrackReader (theMovie=0x555555744080, theTrack=theTrack@entry=0x555555744a40, outReader=outReader@entry=0x7fffffffdc50) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:316
+#7  0x00005555555d2761 in MP4CreateTrackReader (theTrack=0x555555744a40, outReader=0x5555557446c0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:61
+#8  0x0000555555576b3e in HEVCExtractorReader::init (this=this@entry=0x7fffffffde50, strFileName="crashes/id:000018,sig:11,src:000000,op:havoc,rep:2", bForce=bForce@entry=true) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:523
+#9  0x000055555555af1b in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+4. Program received signal SIGSEGV, Segmentation fault.
+0x00005555555c5db7 in MP4GetMovieTrackCount (theMovie=<optimized out>, outTrackCount=0x7fffffffdcb4) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Movies.c:398
+398       *outTrackCount = movieAtom->getTrackCount(movieAtom);
+#0  0x00005555555c5db7 in MP4GetMovieTrackCount (theMovie=<optimized out>, outTrackCount=0x7fffffffdcb4) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Movies.c:398
+#1  0x0000555555576a6f in HEVCExtractorReader::init (this=this@entry=0x7fffffffde50, strFileName="crashes/id:000023,sig:11,src:000000,op:havoc,rep:64", bForce=bForce@entry=true) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:511
+#2  0x000055555555af1b in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+
+5. 
