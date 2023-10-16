@@ -68,4 +68,94 @@ Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
 Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
 
 
-5. 
+5. Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693568) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693568) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352693568) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352693568, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7842476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff78287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff782871b in __assert_fail_base (fmt=0x7ffff79dd150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x555555714475 "(err == 0) || (err == MP4EOF)", file=0x555555714428 "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c", line=99, function=<optimized out>) at ./assert/assert.c:92
+#6  0x00007ffff7839e96 in __GI___assert_fail (assertion=assertion@entry=0x555555714475 "(err == 0) || (err == MP4EOF)", file=file@entry=0x555555714428 "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c", line=line@entry=99, function=function@entry=0x5555557144e0 <__PRETTY_FUNCTION__.1> "MP4TrackReaderGetCurrentSampleDescription") at ./assert/assert.c:101
+#7  0x00005555555d2c4f in MP4TrackReaderGetCurrentSampleDescription (theReader=<optimized out>, sampleEntryH=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:99
+#8  0x000055555556971d in HEVCExtractorReader::getSampleEntryType[abi:cxx11](unsigned int) const (this=<optimized out>, uiTrackID=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:146
+#9  0x0000555555577b37 in HEVCExtractorReader::init (this=this@entry=0x7fffffffddc0, strFileName="crashes/id:000014,sig:06,src:000000,op:havoc,rep:2", bForce=bForce@entry=true) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:550
+#10 0x000055555555af1b in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+
+
+
+
+
+
+6. Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693568) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693568) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352693568) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352693568, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7842476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff78287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff782871b in __assert_fail_base (fmt=0x7ffff79dd150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x5555557147b1 "self->bytesRead == self->size", file=0x555555715e68 "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/StereoVideoAtom.c", line=149, function=<optimized out>) at ./assert/assert.c:92
+#6  0x00007ffff7839e96 in __GI___assert_fail (assertion=assertion@entry=0x5555557147b1 "self->bytesRead == self->size", file=file@entry=0x555555715e68 "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/StereoVideoAtom.c", line=line@entry=149, function=function@entry=0x555555715ec0 <__PRETTY_FUNCTION__.0> "createFromInputStream") at ./assert/assert.c:101
+#7  0x0000555555616cd3 in createFromInputStream (s=0x555555745820, proto=<optimized out>, inputStream=0x5555557444b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/StereoVideoAtom.c:149
+#8  0x00005555555987ae in MP4ParseAtomUsingProtoList (inputStream=inputStream@entry=0x5555557444b0, protoList=<optimized out>, protoList@entry=0x0, defaultAtom=defaultAtom@entry=0, outAtom=outAtom@entry=0x7fffffffd410) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:845
+#9  0x0000555555598f08 in MP4ParseAtom (inputStream=inputStream@entry=0x5555557444b0, outAtom=outAtom@entry=0x7fffffffd410) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:884
+#10 0x00005555555f64bf in createFromInputStream (proto=<optimized out>, inputStream=<optimized out>, s=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SampleTableAtom.c:852
+#11 createFromInputStream (s=0x555555745430, proto=<optimized out>, inputStream=0x5555557444b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SampleTableAtom.c:850
+#12 0x00005555555987ae in MP4ParseAtomUsingProtoList (inputStream=inputStream@entry=0x5555557444b0, protoList=<optimized out>, protoList@entry=0x0, defaultAtom=defaultAtom@entry=0, outAtom=outAtom@entry=0x7fffffffd590) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:845
+#13 0x0000555555598f08 in MP4ParseAtom (inputStream=inputStream@entry=0x5555557444b0, outAtom=outAtom@entry=0x7fffffffd590) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:884
+#14 0x00005555556dd5b3 in createFromInputStream (proto=<optimized out>, inputStream=<optimized out>, s=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MediaInformationAtom.c:777
+#15 createFromInputStream (s=0x555555744f40, proto=<optimized out>, inputStream=0x5555557444b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MediaInformationAtom.c:775
+#16 0x00005555555987ae in MP4ParseAtomUsingProtoList (inputStream=inputStream@entry=0x5555557444b0, protoList=<optimized out>, protoList@entry=0x0, defaultAtom=defaultAtom@entry=0, outAtom=outAtom@entry=0x7fffffffd710) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:845
+#17 0x0000555555598f08 in MP4ParseAtom (inputStream=inputStream@entry=0x5555557444b0, outAtom=outAtom@entry=0x7fffffffd710) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:884
+#18 0x00005555556d184b in createFromInputStream (proto=<optimized out>, inputStream=<optimized out>, s=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MediaAtom.c:534
+#19 createFromInputStream (s=0x555555744c40, proto=<optimized out>, inputStream=0x5555557444b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MediaAtom.c:532
+#20 0x00005555555987ae in MP4ParseAtomUsingProtoList (inputStream=inputStream@entry=0x5555557444b0, protoList=<optimized out>, protoList@entry=0x0, defaultAtom=defaultAtom@entry=0, outAtom=outAtom@entry=0x7fffffffd890) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:845
+#21 0x0000555555598f08 in MP4ParseAtom (inputStream=inputStream@entry=0x5555557444b0, outAtom=outAtom@entry=0x7fffffffd890) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:884
+#22 0x000055555562833b in trakAtomCreateFromInputStream (proto=<optimized out>, inputStream=<optimized out>, s=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/TrackAtom.c:466
+#23 trakAtomCreateFromInputStream (s=0x5555557449a0, proto=<optimized out>, inputStream=0x5555557444b0 "&\001") at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/TrackAtom.c:463
+#24 0x00005555555987ae in MP4ParseAtomUsingProtoList (inputStream=inputStream@entry=0x5555557444b0, protoList=<optimized out>, protoList@entry=0x0, defaultAtom=defaultAtom@entry=0, outAtom=outAtom@entry=0x7fffffffda10) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:845
+#25 0x0000555555598f08 in MP4ParseAtom (inputStream=inputStream@entry=0x5555557444b0, outAtom=outAtom@entry=0x7fffffffda10) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:884
+#26 0x00005555556f2603 in createFromInputStream (proto=<optimized out>, inputStream=<optimized out>, s=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieAtom.c:648
+#27 createFromInputStream (s=0x555555744640, proto=<optimized out>, inputStream=0x5555557444b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieAtom.c:646
+#28 0x00005555555987ae in MP4ParseAtomUsingProtoList (inputStream=0x5555557444b0, protoList=<optimized out>, protoList@entry=0x0, defaultAtom=defaultAtom@entry=0, outAtom=outAtom@entry=0x7fffffffdb90) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:845
+#29 0x0000555555598f08 in MP4ParseAtom (inputStream=<optimized out>, outAtom=outAtom@entry=0x7fffffffdb90) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:884
+#30 0x00005555555c4b18 in parseMovie (theMovie=0x7fffffffddb8, moov=0x555555744060, openMovieFlags=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Movies.c:117
+#31 0x0000555555576995 in HEVCExtractorReader::init (this=this@entry=0x7fffffffddb0, strFileName="crashes/id:000119,sig:06,src:000553+000375,op:splice,rep:2", bForce=bForce@entry=true) at /usr/include/c++/11/bits/basic_string.h:194
+#32 0x000055555555af1b in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+7. Program received signal SIGSEGV, Segmentation fault.
+0x00005555557010ee in read32 (s=0x555555744680, outVal=0x0, msg=0x5555557182b0 "native_ptl.general_sub_profile_idc[j]") at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4FileMappingInputStream.c:126
+126       *outVal = (hw << 16) | lw;
+#0  0x00005555557010ee in read32 (s=0x555555744680, outVal=0x0, msg=0x5555557182b0 "native_ptl.general_sub_profile_idc[j]") at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4FileMappingInputStream.c:126
+#1  0x000055555569fa2c in createFromInputStream (s=0x555555744810, proto=<optimized out>, inputStream=0x555555744680) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/VVCConfigAtom.c:348
+#2  0x00005555555987ae in MP4ParseAtomUsingProtoList (inputStream=0x555555744680, protoList=<optimized out>, protoList@entry=0x0, defaultAtom=defaultAtom@entry=0, outAtom=outAtom@entry=0x7fffffffdb90) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:845
+#3  0x0000555555598f08 in MP4ParseAtom (inputStream=<optimized out>, outAtom=outAtom@entry=0x7fffffffdb90) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:884
+#4  0x00005555555c4b18 in parseMovie (theMovie=0x7fffffffddb8, moov=0x555555744080, openMovieFlags=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Movies.c:117
+#5  0x0000555555576995 in HEVCExtractorReader::init (this=this@entry=0x7fffffffddb0, strFileName="crashes/id:000130,sig:11,src:000730,op:havoc,rep:32", bForce=bForce@entry=true) at /usr/include/c++/11/bits/basic_string.h:194
+#6  0x000055555555af1b in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+8. Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693568) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693568) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352693568) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352693568, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7842476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff78287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff782871b in __assert_fail_base (fmt=0x7ffff79dd150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x5555557147b1 "self->bytesRead == self->size", file=0x555555719d10 "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SingleItemTypeReferenceAtom.c", line=141, function=<optimized out>) at ./assert/assert.c:92
+#6  0x00007ffff7839e96 in __GI___assert_fail (assertion=assertion@entry=0x5555557147b1 "self->bytesRead == self->size", file=file@entry=0x555555719d10 "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SingleItemTypeReferenceAtom.c", line=line@entry=141, function=function@entry=0x555555719dc0 <__PRETTY_FUNCTION__.0> "createFromInputStream") at ./assert/assert.c:101
+#7  0x000055555570c2a3 in createFromInputStream (proto=<optimized out>, inputStream=0x555555744440, s=0x555555744660) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SingleItemTypeReferenceAtom.c:141
+#8  createFromInputStream (s=0x555555744660, proto=<optimized out>, inputStream=0x555555744440) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SingleItemTypeReferenceAtom.c:92
+#9  0x00005555556c8ef2 in createFromInputStream (inputStream=<optimized out>, proto=<optimized out>, s=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/ItemReferenceAtom.c:86
+#10 createFromInputStream (s=0x555555744530, proto=0x7fffffffda80, inputStream=0x555555744440) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/ItemReferenceAtom.c:68
+#11 0x00005555555987ae in MP4ParseAtomUsingProtoList (inputStream=0x555555744440, protoList=<optimized out>, protoList@entry=0x0, defaultAtom=defaultAtom@entry=0, outAtom=outAtom@entry=0x7fffffffdb90) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:845
+#12 0x0000555555598f08 in MP4ParseAtom (inputStream=<optimized out>, outAtom=outAtom@entry=0x7fffffffdb90) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:884
+#13 0x00005555555c4b18 in parseMovie (theMovie=0x7fffffffddb8, moov=0x555555744060, openMovieFlags=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Movies.c:117
+#14 0x0000555555576995 in HEVCExtractorReader::init (this=this@entry=0x7fffffffddb0, strFileName="crashes/id:000183,sig:06,src:001051+000161,op:splice,rep:16", bForce=bForce@entry=true) at /usr/include/c++/11/bits/basic_string.h:194
+#15 0x000055555555af1b in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractor:
