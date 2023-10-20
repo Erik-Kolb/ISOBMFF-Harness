@@ -159,3 +159,26 @@ __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693568) at .
 #13 0x00005555555c4b18 in parseMovie (theMovie=0x7fffffffddb8, moov=0x555555744060, openMovieFlags=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Movies.c:117
 #14 0x0000555555576995 in HEVCExtractorReader::init (this=this@entry=0x7fffffffddb0, strFileName="crashes/id:000183,sig:06,src:001051+000161,op:splice,rep:16", bForce=bForce@entry=true) at /usr/include/c++/11/bits/basic_string.h:194
 #15 0x000055555555af1b in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractor:
+
+
+
+
+
+
+
+
+
+
+
+9. Program received signal SIGSEGV, Segmentation fault.
+0x00005555557010ee in read32 (s=0x555555744490, outVal=0x0, msg=0x5555557182b0 "native_ptl.general_sub_profile_idc[j]") at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4FileMappingInputStream.c:126
+126       *outVal = (hw << 16) | lw;
+#0  0x00005555557010ee in read32 (s=0x555555744490, outVal=0x0, msg=0x5555557182b0 "native_ptl.general_sub_profile_idc[j]") at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4FileMappingInputStream.c:126
+#1  0x000055555569fa2c in createFromInputStream (s=0x555555744620, proto=<optimized out>, inputStream=0x555555744490) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/VVCConfigAtom.c:348
+#2  0x00005555555987ae in MP4ParseAtomUsingProtoList (inputStream=0x555555744490, protoList=<optimized out>, protoList@entry=0x0, defaultAtom=defaultAtom@entry=0, outAtom=outAtom@entry=0x7fffffffdc20) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:847
+#3  0x0000555555598f08 in MP4ParseAtom (inputStream=<optimized out>, outAtom=outAtom@entry=0x7fffffffdc20) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:886
+#4  0x00005555555c4b18 in parseMovie (theMovie=0x7fffffffde48, moov=0x555555744060, openMovieFlags=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Movies.c:117
+#5  0x0000555555576995 in HEVCExtractorReader::init (this=this@entry=0x7fffffffde40, strFileName="crashes/id:000127,sig:11,src:000655+000043,op:splice,rep:64", bForce=bForce@entry=true) at /usr/include/c++/11/bits/basic_string.h:194
+#6  0x000055555555af1b in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
