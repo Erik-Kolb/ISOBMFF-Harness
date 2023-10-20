@@ -1,5 +1,12 @@
 # ISOBMFF-Harness
 
+Command Line to Run multiple Fuzzers acrosss the Cores:
+There are 4 Cores so
+
+1. timeout 600 ./afl-fuzz -i testcase_dir -o sync_dir -M fuzzer01 [...other stuff...]
+2. timeout 600 ./afl-fuzz -i testcase_dir -o sync_dir -S fuzzer02 [...other stuff...]
+3. timeout 600 ./afl-fuzz -i testcase_dir -o sync_dir -S fuzzer03 [...other stuff...]
+4. timeout 600 ./afl-fuzz -i testcase_dir -o sync_dir -S fuzzer04 [...other stuff...]
 
 Command Lines and Interesting Notes I have Found regarding fuzzing sessions for ISOBMFF executables with ISOBMFF test files:
 
