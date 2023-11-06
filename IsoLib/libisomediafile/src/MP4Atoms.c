@@ -28,6 +28,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <stdio.h>
+#include <assert.h>
 
 #ifndef INCLUDED_MJ2ATOMS_H
 #include "MJ2Atoms.h"
@@ -734,7 +735,6 @@ MP4Err MP4DeleteListEntryAtom(MP4LinkedList list, u32 atomType)
   }
 
   err = MP4NotFoundErr;
-
 bail:
   TEST_RETURN(err);
 
@@ -789,6 +789,7 @@ MP4Err MP4ParseAtomUsingProtoList(MP4InputStreamPtr inputStream, u32 *protoList,
   if((atomProto->size != 1) && ((atomProto->size - 4) > inputStream->available))
     BAILWITHERROR(MP4BadDataErr)
   bytesParsed += 4L;
+  /*assert((bytesParsed%4) != 0)*/
 
   sprintf(msgString, "atom size is %d", atomProto->size);
   inputStream->msg(inputStream, msgString);
@@ -796,7 +797,9 @@ MP4Err MP4ParseAtomUsingProtoList(MP4InputStreamPtr inputStream, u32 *protoList,
   /* atom type */
   err = inputStream->read32(inputStream, &atomProto->type, NULL);
   if(err) goto bail;
+  /*assert(atomProto->type==1);*/
   bytesParsed += 4L;
+  /*assert((bytesParsed%4) != 0)*/
   MP4TypeToString(atomProto->type, typeString);
   sprintf(msgString, "atom type is '%s'", typeString);
   inputStream->msg(inputStream, msgString);
@@ -805,6 +808,7 @@ MP4Err MP4ParseAtomUsingProtoList(MP4InputStreamPtr inputStream, u32 *protoList,
     err = inputStream->readData(inputStream, 16, (char *)atomProto->uuid, NULL);
     if(err) goto bail;
     bytesParsed += 16L;
+    /*assert((bytesParsed%16) != 0)*/
   }
 
   /* large atom */
@@ -822,6 +826,7 @@ MP4Err MP4ParseAtomUsingProtoList(MP4InputStreamPtr inputStream, u32 *protoList,
     atomProto->size64 |= size;
     atomProto->size = 1;
     bytesParsed += 8L;
+    /*assert((bytesParsed%8) !=8)*/
   }
 
   atomProto->bytesRead = bytesParsed;
@@ -832,6 +837,7 @@ MP4Err MP4ParseAtomUsingProtoList(MP4InputStreamPtr inputStream, u32 *protoList,
     {
       if(*protoList == atomProto->type) break;
       protoList++;
+      /* *protoList could be an IJON Variable*/
     }
     if(*protoList == 0)
     {
@@ -871,6 +877,7 @@ MP4Err MP4ParseAtomUsingProtoList(MP4InputStreamPtr inputStream, u32 *protoList,
         inputStream->read8(inputStream, &x, NULL);
     }
   }
+  IJON_INC(bytesParsed);
   *outAtom = newAtom;
   inputStream->indent--;
   inputStream->msg(inputStream, "}");

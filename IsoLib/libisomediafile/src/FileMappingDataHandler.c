@@ -44,6 +44,10 @@ static MP4Err createCanonicalPathName(struct MP4InputStreamRecord *inputStream,
   }
   err   = MP4NoErr;
   fname = dataEntry->location;
+  if(fname ==0)
+  {
+    exit(0);
+  }
   if((strncmp(fname, "file://", 7) == 0) || (strncmp(fname, "file|//", 7) == 0))
   {
     /* absolute URL */

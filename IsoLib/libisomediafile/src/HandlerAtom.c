@@ -65,6 +65,7 @@ static MP4Err serialize(struct MP4Atom *s, char *buffer)
   {
     PUT8(nameLength);
     PUTBYTES(self->nameUTF8, self->nameLength);
+    /*IJON_MAX(nameLength)*/
   }
   else
   {
@@ -174,6 +175,7 @@ static MP4Err createFromInputStream(MP4AtomPtr s, MP4AtomPtr proto, MP4InputStre
   {
     sprintf(debugmsg, "handler name is '%s'", self->nameUTF8);
     DEBUG_MSG(debugmsg);
+    /*SMELLY*/
   }
 bail:
   TEST_RETURN(err);

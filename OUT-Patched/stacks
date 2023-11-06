@@ -1,0 +1,639 @@
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575325]
+[Inferior 1 (process 575321) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575362]
+[Inferior 1 (process 575359) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575372]
+[Inferior 1 (process 575369) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45	  *outTrackID     = trackHeaderAtom->trackID;
+#0  0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x000055555567dac2 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575463]
+[Inferior 1 (process 575460) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45	  *outTrackID     = trackHeaderAtom->trackID;
+#0  0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x000055555567dac2 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575491]
+[Inferior 1 (process 575488) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45	  *outTrackID     = trackHeaderAtom->trackID;
+#0  0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x000055555567dac2 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352693696, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7842476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff78287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff782871b in __assert_fail_base (fmt=0x7ffff79dd150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x555555892f20 <str> "(err == 0) || (err == MP4EOF)", file=0x555555892f60 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c", line=99, function=<optimized out>) at ./assert/assert.c:92
+#6  0x00007ffff7839e96 in __GI___assert_fail (assertion=0x555555892f20 <str> "(err == 0) || (err == MP4EOF)", file=0x555555892f60 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c", line=99, function=0x555555893060 <__PRETTY_FUNCTION__.MP4TrackReaderGetCurrentSampleDescription> "MP4Err MP4TrackReaderGetCurrentSampleDescription(MP4TrackReader, MP4Handle)") at ./assert/assert.c:101
+#7  0x00005555556f4f1e in MP4TrackReaderGetCurrentSampleDescription (theReader=<optimized out>, sampleEntryH=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:99
+#8  0x0000555555670e64 in HEVCExtractorReader::getSampleEntryType[abi:cxx11](unsigned int) const (this=<optimized out>, uiTrackID=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:146
+#9  0x000055555567eaa7 in HEVCExtractorReader::init (this=0x8c813, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:550
+#10 0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575519]
+[Inferior 1 (process 575516) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45	  *outTrackID     = trackHeaderAtom->trackID;
+#0  0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x000055555567dac2 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575547]
+[Inferior 1 (process 575544) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352693696, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7842476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff78287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff782871b in __assert_fail_base (fmt=0x7ffff79dd150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x555555892f20 <str> "(err == 0) || (err == MP4EOF)", file=0x555555892f60 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c", line=99, function=<optimized out>) at ./assert/assert.c:92
+#6  0x00007ffff7839e96 in __GI___assert_fail (assertion=0x555555892f20 <str> "(err == 0) || (err == MP4EOF)", file=0x555555892f60 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c", line=99, function=0x555555893060 <__PRETTY_FUNCTION__.MP4TrackReaderGetCurrentSampleDescription> "MP4Err MP4TrackReaderGetCurrentSampleDescription(MP4TrackReader, MP4Handle)") at ./assert/assert.c:101
+#7  0x00005555556f4f1e in MP4TrackReaderGetCurrentSampleDescription (theReader=<optimized out>, sampleEntryH=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:99
+#8  0x0000555555670e64 in HEVCExtractorReader::getSampleEntryType[abi:cxx11](unsigned int) const (this=<optimized out>, uiTrackID=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:146
+#9  0x000055555567eaa7 in HEVCExtractorReader::init (this=0x8c842, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:550
+#10 0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575566]
+[Inferior 1 (process 575563) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575594]
+[Inferior 1 (process 575591) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575604]
+[Inferior 1 (process 575601) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575641]
+[Inferior 1 (process 575638) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45	  *outTrackID     = trackHeaderAtom->trackID;
+#0  0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x000055555567dac2 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352693696, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7842476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff78287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff782871b in __assert_fail_base (fmt=0x7ffff79dd150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x55555588f540 <str> "self->type", file=0x55555588f400 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c", line=939, function=<optimized out>) at ./assert/assert.c:92
+#6  0x00007ffff7839e96 in __GI___assert_fail (assertion=0x55555588f540 <str> "self->type", file=0x55555588f400 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c", line=939, function=0x55555588f4c0 <__PRETTY_FUNCTION__.MP4SerializeCommonBaseAtomFields> "MP4Err MP4SerializeCommonBaseAtomFields(struct MP4Atom *, char *)") at ./assert/assert.c:101
+#7  0x00005555556afb73 in MP4SerializeCommonBaseAtomFields (self=0x60c000000280, buffer=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:939
+#8  0x00005555557876cb in serialize (s=0x8c8b2, buffer=0x611000000456 '\276' <repeats 113 times>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/UnknownAtom.c:49
+#9  0x0000555555797021 in serialize (s=<optimized out>, buffer=0x8c8b2 <error: Cannot access memory at address 0x8c8b2>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/VisualSampleEntryAtom.c:60
+#10 0x00005555556d44c8 in MP4GetMediaSampleDescription (theMedia=<optimized out>, index=<optimized out>, outDescriptionH=<optimized out>, outDataReferenceIndex=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Media.c:765
+#11 0x00005555556f4e89 in MP4TrackReaderGetCurrentSampleDescription (theReader=<optimized out>, sampleEntryH=0x6) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:96
+#12 0x0000555555670e64 in HEVCExtractorReader::getSampleEntryType[abi:cxx11](unsigned int) const (this=<optimized out>, uiTrackID=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:146
+#13 0x000055555567eaa7 in HEVCExtractorReader::init (this=0x8c8b2, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:550
+#14 0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352693696, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7842476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff78287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff782871b in __assert_fail_base (fmt=0x7ffff79dd150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x55555588f540 <str> "self->type", file=0x55555588f400 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c", line=939, function=<optimized out>) at ./assert/assert.c:92
+#6  0x00007ffff7839e96 in __GI___assert_fail (assertion=0x55555588f540 <str> "self->type", file=0x55555588f400 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c", line=939, function=0x55555588f4c0 <__PRETTY_FUNCTION__.MP4SerializeCommonBaseAtomFields> "MP4Err MP4SerializeCommonBaseAtomFields(struct MP4Atom *, char *)") at ./assert/assert.c:101
+#7  0x00005555556afb73 in MP4SerializeCommonBaseAtomFields (self=self@entry=0x60d000000110, buffer=buffer@entry=0x6110000002c0 "") at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:939
+#8  0x00005555557db2f4 in serialize (s=0x60d000000110, buffer=0x6110000002c0 "") at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/GenericSampleEntryAtom.c:59
+#9  0x00005555556d44c8 in MP4GetMediaSampleDescription (theMedia=<optimized out>, index=<optimized out>, outDescriptionH=<optimized out>, outDataReferenceIndex=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Media.c:765
+#10 0x00005555556f4e89 in MP4TrackReaderGetCurrentSampleDescription (theReader=<optimized out>, sampleEntryH=0x6) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:96
+#11 0x0000555555670e64 in HEVCExtractorReader::getSampleEntryType[abi:cxx11](unsigned int) const (this=<optimized out>, uiTrackID=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:146
+#12 0x000055555567eaa7 in HEVCExtractorReader::init (this=0x8c8bb, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:550
+#13 0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45	  *outTrackID     = trackHeaderAtom->trackID;
+#0  0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x000055555567dac2 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575714]
+[Inferior 1 (process 575711) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45	  *outTrackID     = trackHeaderAtom->trackID;
+#0  0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x000055555567dac2 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45	  *outTrackID     = trackHeaderAtom->trackID;
+#0  0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x000055555567dac2 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575769]
+[Inferior 1 (process 575766) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575779]
+[Inferior 1 (process 575776) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575789]
+[Inferior 1 (process 575786) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45	  *outTrackID     = trackHeaderAtom->trackID;
+#0  0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x000055555567dac2 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575808]
+[Inferior 1 (process 575805) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575827]
+[Inferior 1 (process 575824) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352693696, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7842476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff78287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff782871b in __assert_fail_base (fmt=0x7ffff79dd150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x5555558adfe0 <str> "self->bytesRead == self->size", file=0x5555558ae020 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SingleItemTypeReferenceAtom.c", line=141, function=<optimized out>) at ./assert/assert.c:92
+#6  0x00007ffff7839e96 in __GI___assert_fail (assertion=0x5555558adfe0 <str> "self->bytesRead == self->size", file=0x5555558ae020 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SingleItemTypeReferenceAtom.c", line=141, function=0x5555558ae0a0 <__PRETTY_FUNCTION__.createFromInputStream> "MP4Err createFromInputStream(MP4AtomPtr, MP4AtomPtr, MP4InputStreamPtr)") at ./assert/assert.c:101
+#7  0x000055555587090b in createFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SingleItemTypeReferenceAtom.c:141
+#8  0x0000555555820011 in createFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/ItemReferenceAtom.c:86
+#9  0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#10 0x00005555557bb3eb in createFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/DataInformationAtom.c:153
+#11 0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#12 0x000055555583688a in createFromInputStream (s=0x6130000003c0, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MediaInformationAtom.c:777
+#13 0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#14 0x00005555558291bc in createFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MediaAtom.c:534
+#15 0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#16 0x000055555575bedc in trakAtomCreateFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/TrackAtom.c:466
+#17 0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#18 0x000055555584ae5c in createFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieAtom.c:648
+#19 0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#20 0x00005555556e45df in parseMovie (theMovie=<optimized out>, moov=0x60c000000100, openMovieFlags=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Movies.c:117
+#21 0x00005555556e55d1 in MP4OpenMovieFile (theMovie=0x8c95a, movieURL=0x606000000140 "crashes/id:000055,sig:06,src:000207,op:havoc,rep:4", openMovieFlags=6) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Movies.c:385
+#22 0x000055555567d738 in HEVCExtractorReader::init (this=0x7ffff78969fc <__GI___pthread_kill+300>, strFileName="crashes/id:000055,sig:06,src:000207,op:havoc,rep:4", bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:507
+#23 0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352693696, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7842476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff78287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff782871b in __assert_fail_base (fmt=0x7ffff79dd150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x5555558adfe0 <str> "self->bytesRead == self->size", file=0x5555558ae020 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SingleItemTypeReferenceAtom.c", line=141, function=<optimized out>) at ./assert/assert.c:92
+#6  0x00007ffff7839e96 in __GI___assert_fail (assertion=0x5555558adfe0 <str> "self->bytesRead == self->size", file=0x5555558ae020 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SingleItemTypeReferenceAtom.c", line=141, function=0x5555558ae0a0 <__PRETTY_FUNCTION__.createFromInputStream> "MP4Err createFromInputStream(MP4AtomPtr, MP4AtomPtr, MP4InputStreamPtr)") at ./assert/assert.c:101
+#7  0x000055555587090b in createFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/SingleItemTypeReferenceAtom.c:141
+#8  0x0000555555820011 in createFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/ItemReferenceAtom.c:86
+#9  0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#10 0x00005555557bb3eb in createFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/DataInformationAtom.c:153
+#11 0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#12 0x000055555583688a in createFromInputStream (s=0x6130000003c0, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MediaInformationAtom.c:777
+#13 0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#14 0x00005555558291bc in createFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MediaAtom.c:534
+#15 0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#16 0x000055555575bedc in trakAtomCreateFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/TrackAtom.c:466
+#17 0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#18 0x000055555584ae5c in createFromInputStream (s=<optimized out>, proto=<optimized out>, inputStream=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieAtom.c:648
+#19 0x00005555556ae49f in MP4ParseAtomUsingProtoList (inputStream=0x60b0000000f0, protoList=<optimized out>, defaultAtom=<optimized out>, outAtom=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Atoms.c:851
+#20 0x00005555556e45df in parseMovie (theMovie=<optimized out>, moov=0x60c000000100, openMovieFlags=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Movies.c:117
+#21 0x00005555556e55d1 in MP4OpenMovieFile (theMovie=0x8c963, movieURL=0x606000000140 "crashes/id:000056,sig:06,src:000207,op:havoc,rep:4", openMovieFlags=6) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4Movies.c:385
+#22 0x000055555567d738 in HEVCExtractorReader::init (this=0x7ffff78969fc <__GI___pthread_kill+300>, strFileName="crashes/id:000056,sig:06,src:000207,op:havoc,rep:4", bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:507
+#23 0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352693696, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7842476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff78287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff782871b in __assert_fail_base (fmt=0x7ffff79dd150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x555555892f20 <str> "(err == 0) || (err == MP4EOF)", file=0x555555892f60 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c", line=99, function=<optimized out>) at ./assert/assert.c:92
+#6  0x00007ffff7839e96 in __GI___assert_fail (assertion=0x555555892f20 <str> "(err == 0) || (err == MP4EOF)", file=0x555555892f60 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c", line=99, function=0x555555893060 <__PRETTY_FUNCTION__.MP4TrackReaderGetCurrentSampleDescription> "MP4Err MP4TrackReaderGetCurrentSampleDescription(MP4TrackReader, MP4Handle)") at ./assert/assert.c:101
+#7  0x00005555556f4f1e in MP4TrackReaderGetCurrentSampleDescription (theReader=<optimized out>, sampleEntryH=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:99
+#8  0x0000555555670e64 in HEVCExtractorReader::getSampleEntryType[abi:cxx11](unsigned int) const (this=<optimized out>, uiTrackID=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:146
+#9  0x000055555567eaa7 in HEVCExtractorReader::init (this=0x8c990, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:550
+#10 0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575900]
+[Inferior 1 (process 575897) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGABRT, Aborted.
+__pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#0  __pthread_kill_implementation (no_tid=0, signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:44
+#1  __pthread_kill_internal (signo=6, threadid=140737352693696) at ./nptl/pthread_kill.c:78
+#2  __GI___pthread_kill (threadid=140737352693696, signo=signo@entry=6) at ./nptl/pthread_kill.c:89
+#3  0x00007ffff7842476 in __GI_raise (sig=sig@entry=6) at ../sysdeps/posix/raise.c:26
+#4  0x00007ffff78287f3 in __GI_abort () at ./stdlib/abort.c:79
+#5  0x00007ffff782871b in __assert_fail_base (fmt=0x7ffff79dd150 "%s%s%s:%u: %s%sAssertion `%s' failed.\n%n", assertion=0x555555892f20 <str> "(err == 0) || (err == MP4EOF)", file=0x555555892f60 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c", line=99, function=<optimized out>) at ./assert/assert.c:92
+#6  0x00007ffff7839e96 in __GI___assert_fail (assertion=0x555555892f20 <str> "(err == 0) || (err == MP4EOF)", file=0x555555892f60 <str> "/home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c", line=99, function=0x555555893060 <__PRETTY_FUNCTION__.MP4TrackReaderGetCurrentSampleDescription> "MP4Err MP4TrackReaderGetCurrentSampleDescription(MP4TrackReader, MP4Handle)") at ./assert/assert.c:101
+#7  0x00005555556f4f1e in MP4TrackReaderGetCurrentSampleDescription (theReader=<optimized out>, sampleEntryH=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:99
+#8  0x0000555555670e64 in HEVCExtractorReader::getSampleEntryType[abi:cxx11](unsigned int) const (this=<optimized out>, uiTrackID=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:146
+#9  0x000055555567eaa7 in HEVCExtractorReader::init (this=0x8c9a3, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:550
+#10 0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45	  *outTrackID     = trackHeaderAtom->trackID;
+#0  0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x000055555567dac2 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+45	  *outTrackID     = trackHeaderAtom->trackID;
+#0  0x00005555556a109c in MP4GetTrackID (theTrack=<optimized out>, outTrackID=0x7fffffffd1b0) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MovieTracks.c:45
+#1  0x000055555567dac2 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:519
+#2  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Detaching after fork from child process 575937]
+[Inferior 1 (process 575934) exited with code 01]
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Program received signal SIGSEGV, Segmentation fault.
+0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+342	  theMedia = self->media;
+#0  0x00005555558689fd in MP4DisposeOrdinaryTrackReader (self=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4OrdinaryTrackReader.c:342
+#1  0x00005555556f569f in MP4DisposeTrackReader (theReader=0xbebebebebebebeee) at /home/ek/Documents/CS489/isobmff/IsoLib/libisomediafile/src/MP4TrackReader.c:220
+#2  0x000055555567db48 in HEVCExtractorReader::init (this=0x7fffffffd9c0, strFileName=..., bForce=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/HEVCExtractorReader.cpp:526
+#3  0x0000555555665784 in main (argc=<optimized out>, argv=<optimized out>) at /home/ek/Documents/CS489/isobmff/IsoLib/hevc_extractors/src/hevc_extractors.cpp:129
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[Inferior 1 (process 575953) exited with code 01]

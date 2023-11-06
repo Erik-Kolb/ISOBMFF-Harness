@@ -395,6 +395,10 @@ MP4_EXTERN(MP4Err)
 MP4GetMovieTrackCount(MP4Movie theMovie, u32 *outTrackCount)
 {
   GETMOVIEATOM(theMovie);
+  if(movieAtom == 0)
+  { 
+    exit(0);
+  } 
   *outTrackCount = movieAtom->getTrackCount(movieAtom);
 bail:
   TEST_RETURN(err);

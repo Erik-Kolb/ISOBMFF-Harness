@@ -1,0 +1,27 @@
+start_time        : 1698666965
+last_update       : 1698668638
+fuzzer_pid        : 267253
+cycles_done       : 0
+execs_done        : 308004
+execs_per_sec     : 215.93
+paths_total       : 431
+paths_favored     : 126
+paths_found       : 430
+paths_imported    : 0
+max_depth         : 6
+cur_path          : 390
+pending_favs      : 19
+pending_total     : 283
+variable_paths    : 0
+stability         : 100.00%
+bitmap_cvg        : 4.88%
+unique_crashes    : 68
+unique_hangs      : 69
+last_path         : 1698668624
+last_crash        : 1698668393
+last_hang         : 1698668603
+execs_since_crash : 46861
+exec_timeout      : 40
+afl_banner        : hevc_extractors
+afl_version       : 2.51b-ijon
+command_line      : ../IJON/ijon/afl-fuzz -m none -i IN -o OUT-Patched -d ./bin/hevc_extractors -k @@

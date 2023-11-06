@@ -342,7 +342,7 @@ MP4Err MP4DisposeOrdinaryTrackReader(MP4TrackReaderPtr self)
   theMedia = self->media;
   if(theMedia == NULL)
   {
-    BAILWITHERROR(MP4BadParamErr);
+    exit(0);
   }
   minf = (MP4MediaInformationAtomPtr)((MP4MediaAtomPtr)theMedia)->information;
   if(minf == NULL)
