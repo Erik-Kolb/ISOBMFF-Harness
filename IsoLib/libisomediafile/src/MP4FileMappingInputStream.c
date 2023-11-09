@@ -124,6 +124,7 @@ static MP4Err read32(struct MP4InputStreamRecord *s, u32 *outVal, char *msg)
   err = read16(s, (u32 *)&lw, NULL);
   if(err) goto bail;
   *outVal = (hw << 16) | lw;
+  /*IJON_MAX(outVal)*/
   if(msg && self->debugging)
   {
     doIndent(s);

@@ -37,6 +37,7 @@ static void destroy(MP4AtomPtr s)
   DESTROY_ATOM_LIST_F(atomList);
   DESTROY_ATOM_LIST_F(sampletoGroupList);
   DESTROY_ATOM_LIST_F(groupDescriptionList);
+  /*Can I use an IJON variable on the error below?*/
   (self->tfhd)->destroy((MP4AtomPtr)(self->tfhd));
   if(self->tfdt) (self->tfdt)->destroy((MP4AtomPtr)(self->tfdt));
 
