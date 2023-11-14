@@ -799,6 +799,7 @@ MP4Err MP4ParseAtomUsingProtoList(MP4InputStreamPtr inputStream, u32 *protoList,
   if(err) goto bail;
   /*assert(atomProto->type==1);*/
   bytesParsed += 4L;
+  IJON_INC(bytesParsed);
   /*assert((bytesParsed%4) != 0)*/
   MP4TypeToString(atomProto->type, typeString);
   sprintf(msgString, "atom type is '%s'", typeString);
@@ -834,9 +835,10 @@ MP4Err MP4ParseAtomUsingProtoList(MP4InputStreamPtr inputStream, u32 *protoList,
   if(protoList)
   {
     while(*protoList)
-    {
+    { 
       if(*protoList == atomProto->type) break;
       protoList++;
+      IJON_INC(protoList);
       /* *protoList could be an IJON Variable*/
     }
     if(*protoList == 0)
@@ -869,6 +871,7 @@ MP4Err MP4ParseAtomUsingProtoList(MP4InputStreamPtr inputStream, u32 *protoList,
     sprintf(msgString, "##### atom size is %lld but parse used %lld bytes ####", atomProto->size64,
             consumedBytes);
     inputStream->msg(inputStream, msgString);
+    IJON_INC(consumedBytes);
     if(consumedBytes < atomProto->size64)
     {
       u32 x;
